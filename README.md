@@ -14,6 +14,7 @@ Technologies used:
 
 * HTML, CSS, JavaScript
 * Git and GitHub
+* Artificial Intelligence
 
 How to run it locally:
 
