@@ -1,4 +1,4 @@
-Webathon Project
+# Webathon Project
 
 This repository holds the code for a project built during a Webathon hackathon.
 
