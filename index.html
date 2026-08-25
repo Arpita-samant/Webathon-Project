@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NIRVAN '26 — Event Arena</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700;800;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<!-- NIRVAN: site content -->
+<body>
+
+<video id="nirvan-bg-video" class="nirvan-bg-video" autoplay muted loop playsinline preload="auto" aria-hidden="true">
+  <source src="assets/bg-video.mp4" type="video/mp4">
+</video>
+
+<canvas id="space"></canvas>
+<canvas id="cognizance3d" aria-hidden="true"></canvas>
+<div class="stars"></div>
+
+<header class="topbar">
+  <img class="site-brand-logo" src="assets/tech-geeks-logo.png" alt="Tech Geeks Club">
+
+  <a class="logo" href="#home">
+    <span>NIRVAN <b>'26</b></span></a>
+  <nav>
+    <a class="active" href="#home">HOME</a>
+    <a href="#about">ABOUT</a>
+    <a href="#events">EVENTS</a>
+    <a href="#hackathon">HACKATHON</a>
+    <a href="#treasure">TREASURE HUNT</a>
+    <a href="#ctf">CTF</a>
+    <a href="#esport">E-SPORTS</a>
+    <a href="#schedule">SCHEDULE</a>
+  </nav>
+  <div class="actions"><a href="#register">REGISTER</a></div>
+</header>
+
+<main>
+<section class="hero hero-reference" id="home">
+  <div class="hero-grid"></div>
+  <div class="hero-copy">
+    <div class="hero-present"><span>NIRVAN '26</span> presents...</div>
+    <div class="hero-date">OCTOBER 20 – 22, 2026</div>
+    <h1><span>NIRVAN</span><strong>TECHFEST</strong></h1>
+    <p>A celebration of technology, innovation, and ideas brought together by<br class="desktop-only"> curious minds. Join us as we explore, learn, and build the future.</p>
+    <div class="hero-actions">
+      <a class="hero-btn solid" href="#register">REGISTER</a>
+      <a class="hero-btn outline" href="#about">EXPLORE MORE</a>
+    </div>
+  </div>
+  <!-- <div class="hero-orbit reference-orbit">
+    <div class="orbit-core">N</div>
+    <div class="orbit ring-a"></div>
+    <div class="orbit ring-b"></div>
+    <div class="orbit ring-c"></div>
+  </div> -->
+</section>
+
+<section class="about-reference" id="about">
+  <div class="about-title">ABOUT US</div>
+  <div class="about-content">
+    <div class="about-kicker">TECHFEST</div>
+    <h2>NIRVAN '2026</h2>
+    <div class="about-line"></div>
+    <p>NIRVAN '26 brings together developers, innovators, designers, and technology enthusiasts for two days of challenges, competitions, workshops, and collaboration.</p>
+    <h3>EVENT ARENA</h3>
+    <p>Where ideas become innovation. NIRVAN is a technical-fest built around competition, creativity, learning, and community — giving students a place to build, solve, compete, and connect.</p>
+  </div>
+</section>
+
+<section class="event-index" id="events">
+  <div class="index-head">
+    <div class="kicker cyan"><span></span> EVENT ARENA</div>
+    <h2>CHOOSE YOUR <b>ARENA.</b></h2>
+    <p>Four ways to compete, create, decode and explore.</p>
+  </div>
+  <div class="index-grid">
+    <a href="#hackathon"><span>01</span><b>HACKATHON</b><i>BUILD →</i></a>
+    <a href="#treasure"><span>02</span><b>TECH TREASURE HUNT</b><i>EXPLORE →</i></a>
+    <a href="#ctf"><span>03</span><b>CTF</b><i>DECODE →</i></a>
+    <a href="#esport"><span>04</span><b>E-SPORTS</b><i>COMPETE →</i></a>
+  </div>
+</section>
+
+
+<section class="event " id="hackathon">
+  <div class="event-copy">
+    <div class="section-no">01</div>
+    <div class="kicker cyan"><span></span> EVENT / BUILD</div>
+    <h2>HACKATHON</h2>
+    <div class="line"></div>
+    <p class="description">A high-energy innovation challenge where participants turn ideas into impactful solutions. Build, code, collaborate and compete against talented teams while solving real-world problems under time constraints.</p>
+    <div class="prize">PRIZE POOL <b>₹15,000</b></div>
+    <div class="facts"><div><small>DATE</small><b>12 OCT 2026</b></div><div><small>TIME</small><b>10:00 AM</b></div><div><small>VENUE</small><b>COMPUTER LAB 1</b></div><div><small>TEAM</small><b>2–4</b></div><div><small>FEE</small><b>₹100</b></div><div><small>MODE</small><b>LIVE BUILD</b></div></div>
+    <a class="tech-btn" href="#register" data-event="HACKATHON">REGISTER / KNOW MORE <span>↗</span></a>
+  </div>
+  <div class="visual-stack">
+    <div class="visual-tag">NIRVAN '26 / HACKATHON</div>
+    <div class="cards"><figure class="event-card main"><img src="assets/hack_1.webp" loading="lazy"><figcaption>01</figcaption></figure><figure class="event-card "><img src="assets/hack_2.webp" loading="lazy"><figcaption>02</figcaption></figure><figure class="event-card "><img src="assets/hack_3.webp" loading="lazy"><figcaption>03</figcaption></figure><figure class="event-card "><img src="assets/hack_4.webp" loading="lazy"><figcaption>04</figcaption></figure></div>
+    <div class="route "></div>
+  </div>
+</section>
+
+<section class="event alt" id="treasure">
+  <div class="event-copy">
+    <div class="section-no">02</div>
+    <div class="kicker cyan"><span></span> EVENT / EXPLORE</div>
+    <h2>TECH TREASURE HUNT</h2>
+    <div class="line"></div>
+    <p class="description">A thrilling adventure combining logic, teamwork, observation and problem-solving. Follow clues, overcome challenges and race against other teams to uncover the ultimate treasure.</p>
+    <div class="prize">PRIZE POOL <b>₹8,000</b></div>
+    <div class="facts"><div><small>FORMAT</small><b>TEAM CHALLENGE</b></div><div><small>TEAM</small><b>2–5</b></div><div><small>VENUE</small><b>GEHU CAMPUS</b></div><div><small>MODE</small><b>LIVE / OUTDOOR</b></div><div><small>SKILL</small><b>LOGIC + SPEED</b></div><div><small>GOAL</small><b>FIND THE TREASURE</b></div></div>
+    <a class="tech-btn" href="#register" data-event="TECH TREASURE HUNT">REGISTER / KNOW MORE <span>↗</span></a>
+  </div>
+  <div class="visual-stack">
+    <div class="visual-tag">NIRVAN '26 / TREASURE HUNT</div>
+    <div class="cards"><figure class="event-card main"><img src="assets/hunt_1.webp" loading="lazy"><figcaption>01</figcaption></figure><figure class="event-card "><img src="assets/hunt_2.webp" loading="lazy"><figcaption>02</figcaption></figure><figure class="event-card "><img src="assets/hunt_3.webp" loading="lazy"><figcaption>03</figcaption></figure><figure class="event-card "><img src="assets/hunt_4.webp" loading="lazy"><figcaption>04</figcaption></figure></div>
+    <div class="route reverse"></div>
+  </div>
+</section>
+
+<section class="event " id="ctf">
+  <div class="event-copy">
+    <div class="section-no">03</div>
+    <div class="kicker cyan"><span></span> EVENT / CYBER</div>
+    <h2>CTF</h2>
+    <div class="line"></div>
+    <p class="description">Put your cybersecurity skills to the test through challenges covering cryptography, web security, forensics, reverse engineering and more. Find the flags, crack the challenges and prove your skills.</p>
+    <div class="prize">PRIZE POOL <b>TBA</b></div>
+    <div class="facts"><div><small>FORMAT</small><b>CYBER CHALLENGE</b></div><div><small>TEAM</small><b>INDIVIDUAL / TEAM</b></div><div><small>VENUE</small><b>LAB 2</b></div><div><small>SKILLS</small><b>CRYPTO + WEB</b></div><div><small>MODE</small><b>LIVE CTF</b></div><div><small>GOAL</small><b>CAPTURE FLAGS</b></div></div>
+    <a class="tech-btn" href="#register" data-event="CTF">REGISTER / KNOW MORE <span>↗</span></a>
+  </div>
+  <div class="visual-stack">
+    <div class="visual-tag">NIRVAN '26 / CAPTURE THE FLAG</div>
+    <div class="cards"><figure class="event-card main"><img src="assets/ctf_1.webp" loading="lazy"><figcaption>01</figcaption></figure><figure class="event-card "><img src="assets/ctf_2.webp" loading="lazy"><figcaption>02</figcaption></figure><figure class="event-card "><img src="assets/ctf_3.webp" loading="lazy"><figcaption>03</figcaption></figure><figure class="event-card "><img src="assets/ctf_4.webp" loading="lazy"><figcaption>04</figcaption></figure></div>
+    <div class="route "></div>
+  </div>
+</section>
+
+<section class="event alt" id="esport">
+  <div class="event-copy">
+    <div class="section-no">04</div>
+    <div class="kicker cyan"><span></span> EVENT / COMPETE</div>
+    <h2>E-SPORTS</h2>
+    <div class="line"></div>
+    <p class="description">Experience the ultimate competitive gaming arena where strategy, teamwork, reflexes and skill come together. Compete against fellow gamers, climb the leaderboard and battle for victory.</p>
+    <div class="prize">PRIZE POOL <b>TBA</b></div>
+    <div class="facts"><div><small>FORMAT</small><b>GAMING ARENA</b></div><div><small>TEAM</small><b>AS PER GAME</b></div><div><small>VENUE</small><b>INNOVATION LAB</b></div><div><small>MODE</small><b>LIVE MATCH</b></div><div><small>SKILL</small><b>TEAM + REFLEX</b></div><div><small>GOAL</small><b>TOP THE BOARD</b></div></div>
+    <a class="tech-btn" href="#register" data-event="E-SPORTS">REGISTER / KNOW MORE <span>↗</span></a>
+  </div>
+  <div class="visual-stack">
+    <div class="visual-tag">NIRVAN '26 / E-SPORTS</div>
+    <div class="cards"><figure class="event-card main"><img src="assets/esport_1.webp" loading="lazy"><figcaption>01</figcaption></figure><figure class="event-card "><img src="assets/esport_2.webp" loading="lazy"><figcaption>02</figcaption></figure><figure class="event-card "><img src="assets/esport_3.webp" loading="lazy"><figcaption>03</figcaption></figure><figure class="event-card "><img src="assets/esport_4.webp" loading="lazy"><figcaption>04</figcaption></figure></div>
+    <div class="route reverse"></div>
+  </div>
+</section>
+
+
+<!-- Infinite event showcase -->
+<section class="infinity-events" id="event-scroll" aria-label="NIRVAN '26 event highlights">
+  <div class="infinity-head">
+    <div class="kicker cyan"><span></span> NIRVAN '26 / EVENT LOOP</div>
+    <h2>EXPLORE THE <b>ARENA.</b></h2>
+    <p>Four arenas. One continuous rush. Hover to pause the stream.</p>
+  </div>
+
+  <div class="infinity-viewport">
+    <div class="infinity-track">
+      <div class="infinity-set">
+        <a class="infinity-card" href="#hackathon" aria-label="Go to Hackathon">
+          <span class="infinity-index">01</span>
+          <img src="assets/poster-hackathon.png" alt="Hackathon event poster" loading="lazy">
+          <span class="infinity-label">HACKATHON <i>↗</i></span>
+        </a>
+        <a class="infinity-card" href="#treasure-hunt" aria-label="Go to Tech Treasure Hunt">
+          <span class="infinity-index">02</span>
+          <img src="assets/poster-treasure-hunt.png" alt="Tech Treasure Hunt event poster" loading="lazy">
+          <span class="infinity-label">TREASURE HUNT <i>↗</i></span>
+        </a>
+        <a class="infinity-card" href="#ctf" aria-label="Go to CTF">
+          <span class="infinity-index">03</span>
+          <img src="assets/poster-ctf.png" alt="CTF event poster" loading="lazy">
+          <span class="infinity-label">CTF <i>↗</i></span>
+        </a>
+        <a class="infinity-card" href="#esports" aria-label="Go to E-Sports">
+          <span class="infinity-index">04</span>
+          <img src="assets/poster-esports.png" alt="E-Sports event poster" loading="lazy">
+          <span class="infinity-label">E-SPORTS <i>↗</i></span>
+        </a>
+      </div>
+
+      <!-- Duplicate set makes the CSS track seamless and truly infinite. -->
+      <div class="infinity-set" aria-hidden="true">
+        <a class="infinity-card" href="#hackathon" tabindex="-1">
+          <span class="infinity-index">01</span>
+          <img src="assets/poster-hackathon.png" alt="" loading="lazy">
+          <span class="infinity-label">HACKATHON <i>↗</i></span>
+        </a>
+        <a class="infinity-card" href="#treasure-hunt" tabindex="-1">
+          <span class="infinity-index">02</span>
+          <img src="assets/poster-treasure-hunt.png" alt="" loading="lazy">
+          <span class="infinity-label">TREASURE HUNT <i>↗</i></span>
+        </a>
+        <a class="infinity-card" href="#ctf" tabindex="-1">
+          <span class="infinity-index">03</span>
+          <img src="assets/poster-ctf.png" alt="" loading="lazy">
+          <span class="infinity-label">CTF <i>↗</i></span>
+        </a>
+        <a class="infinity-card" href="#esports" tabindex="-1">
+          <span class="infinity-index">04</span>
+          <img src="assets/poster-esports.png" alt="" loading="lazy">
+          <span class="infinity-label">E-SPORTS <i>↗</i></span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="infinity-line" aria-hidden="true">
+    <span>INNOVATION</span><b>✦</b><span>TECHNOLOGY</span><b>✦</b>
+    <span>COMPETITION</span><b>✦</b><span>COMMUNITY</span><b>✦</b>
+    <span>NIRVAN '26</span>
+  </div>
+</section>
+
+<!-- Event schedule -->
+<section class="schedule-section" id="schedule">
+  <div class="schedule-head">
+    <div class="kicker cyan"><span></span> NIRVAN '26 / TIMELINE</div>
+    <h2>SCHEDULE</h2>
+    <p>Everything at a glance. Pick your arena, know the time, and move without missing the action.</p>
+  </div>
+
+  <div class="schedule-board">
+    <div class="schedule-board-top">
+      <span>DAY 01</span><b>EVENT FLOW</b><span>GEHU CAMPUS</span>
+    </div>
+    <div class="schedule-row"><div class="schedule-time">09:00</div><div class="schedule-event"><strong>OPENING CEREMONY</strong><small>Welcome • Fest Briefing</small></div><div class="schedule-place">MAIN AUDITORIUM</div></div>
+    <div class="schedule-row"><div class="schedule-time">10:00</div><div class="schedule-event"><strong>HACKATHON</strong><small>Build • Code • Collaborate</small></div><div class="schedule-place">LAB 1</div></div>
+    <div class="schedule-row"><div class="schedule-time">11:00</div><div class="schedule-event"><strong>TECH TREASURE HUNT</strong><small>Clues • Logic • Discovery</small></div><div class="schedule-place">SEMINAR HALL</div></div>
+    <div class="schedule-row"><div class="schedule-time">13:00</div><div class="schedule-event"><strong>LUNCH</strong><small>Recharge &amp; Connect</small></div><div class="schedule-place">FOOD COURT</div></div>
+    <div class="schedule-row"><div class="schedule-time">14:00</div><div class="schedule-event"><strong>E-SPORTS</strong><small>Live Matches • Leaderboard</small></div><div class="schedule-place">LAB 2</div></div>
+    <div class="schedule-row"><div class="schedule-time">16:00</div><div class="schedule-event"><strong>CTF</strong><small>Cyber Challenge • Capture Flags</small></div><div class="schedule-place">OPEN GROUND</div></div>
+    <div class="schedule-row"><div class="schedule-time">18:00</div><div class="schedule-event"><strong>HACKSPRINT BEGINS</strong><small>Final Build Sprint</small></div><div class="schedule-place">INNOVATION LAB</div></div>
+  </div>
+
+  <div class="schedule-note">THIS IS A SAMPLE SCHEDULE — FINAL TIMINGS MAY BE UPDATED BY THE ORGANIZING TEAM.</div>
+
+  <div class="schedule-lower">
+    <div class="scan-card">
+      <div class="card-label">01 / QUICK VIEW</div>
+      <h3>MAKE IT EASY<br><b>TO SCAN.</b></h3>
+      <ul><li>Timeline</li><li>Event cards</li><li>Filters</li><li>Interactive schedule</li></ul>
+    </div>
+    <div class="speaker-card">
+      <div class="card-label">02 / GUESTS</div>
+      <h3>SPEAKER / GUEST<br><b>PROFILE</b></h3>
+      <div class="speaker-grid">
+        <div class="speaker"><div class="speaker-avatar">01</div><strong>Guest Speaker</strong><span>Technology &amp; Innovation</span></div>
+        <div class="speaker"><div class="speaker-avatar">02</div><strong>Industry Expert</strong><span>Engineering &amp; Product</span></div>
+        <div class="speaker"><div class="speaker-avatar">03</div><strong>Community Lead</strong><span>Developer Ecosystem</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="quote-band">
+  <div>DESIGN.</div><div>BUILD.</div><div>DECODE.</div><div class="yellow">COMPETE.</div>
+</section>
+
+<section class="register" id="register">
+  <div class="register-copy">
+    <div class="kicker cyan"><span></span> NIRVAN '26 / REGISTRATION</div>
+    <h2>ENTER THE<br><b>ARENA.</b></h2>
+    <p>Select an event and complete your registration.</p>
+  </div>
+  <div class="register-buttons">
+    <button data-event="Hackathon">HACKATHON <span>↗</span></button>
+    <button data-event="Tech Treasure Hunt">TREASURE HUNT <span>↗</span></button>
+    <button data-event="CTF">CTF <span>↗</span></button>
+    <button data-event="E-Sports">E-SPORTS <span>↗</span></button>
+  </div>
+</section>
+</main>
+
+<div class="modal" id="modal">
+ <div class="modal-box">
+  <button class="close" id="close">×</button>
+  <div class="kicker cyan"><span></span> REGISTRATION</div>
+  <h3>ENTER THE <b>ARENA.</b></h3>
+  <form id="form">
+   <input required placeholder="FULL NAME">
+   <input required type="email" placeholder="EMAIL">
+   <input placeholder="TEAM NAME">
+   <select id="eventSelect" required><option value="">SELECT EVENT</option><option>Hackathon</option><option>Tech Treasure Hunt</option><option>CTF</option><option>E-Sports</option></select>
+   <button class="submit">SUBMIT <span>↗</span></button>
+  </form>
+  <p id="success"></p>
+ </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="script.js"></script>
+<script src="cognizance-bg.js"></script>
+</body>
+</html>
