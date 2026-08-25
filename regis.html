@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Register | Webathon 4.0</title>
+
+    <!-- Orbitron Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="regis.css">
+</head>
+
+<body>
+
+    <!-- Background Effects -->
+    <div class="grid-bg"></div>
+    <div class="glow glow-one"></div>
+    <div class="glow glow-two"></div>
+
+    <!-- Registration Section -->
+    <main class="registration-container">
+
+        <div class="registration-card">
+
+            <div class="form-header">
+                <p class="small-heading">WEBATHON 4.0</p>
+
+                <h1>REGISTRATION</h1>
+
+                <p class="subtitle">
+                    Register now and be part of the ultimate coding experience.
+                </p>
+            </div>
+
+            <form id="registrationForm">
+
+                <!-- Full Name -->
+                <div class="form-group">
+                    <label for="fullName">FULL NAME</label>
+
+                    <input
+                        type="text"
+                        id="fullName"
+                        name="fullName"
+                        placeholder="Enter your full name"
+                        required
+                    >
+                </div>
+
+                <!-- Email -->
+                <div class="form-group">
+                    <label for="email">EMAIL ADDRESS</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        required
+                    >
+                </div>
+
+                <!-- Phone -->
+                <div class="form-group">
+                    <label for="phone">PHONE NUMBER</label>
+
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        placeholder="Enter your phone number"
+                        pattern="[0-9]{10}"
+                        maxlength="10"
+                        required
+                    >
+                </div>
+
+                <!-- College -->
+                <div class="form-group">
+                    <label for="college">COLLEGE / UNIVERSITY</label>
+
+                    <input
+                        type="text"
+                        id="college"
+                        name="college"
+                        placeholder="Enter your college name"
+                        required
+                    >
+                </div>
+
+                <!-- Course -->
+                <div class="form-row">
+
+                    <div class="form-group">
+                        <label for="course">COURSE</label>
+
+                        <input
+                            type="text"
+                            id="course"
+                            name="course"
+                            placeholder="e.g. BCA"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="year">YEAR</label>
+
+                        <select id="year" name="year" required>
+                            <option value="">Select Year</option>
+                            <option value="1st Year">1st Year</option>
+                            <option value="2nd Year">2nd Year</option>
+                            <option value="3rd Year">3rd Year</option>
+                            <option value="4th Year">4th Year</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <!-- Team Name -->
+                <div class="form-group">
+                    <label for="teamName">TEAM NAME</label>
+
+                    <input
+                        type="text"
+                        id="teamName"
+                        name="teamName"
+                        placeholder="Enter your team name"
+                        required
+                    >
+                </div>
+
+                <!-- Terms -->
+                <div class="terms">
+                    <input type="checkbox" id="terms" required>
+
+                    <label for="terms">
+                        I agree to the rules and guidelines of Webathon 4.0
+                    </label>
+                </div>
+
+                <!-- Submit -->
+                <button type="submit" class="register-button">
+                    <span>REGISTER NOW</span>
+                    <span class="arrow">→</span>
+                </button>
+
+            </form>
+
+            <!-- Success Message -->
+            <div id="successMessage" class="success-message">
+
+                <div class="success-icon">✓</div>
+
+                <h2>REGISTRATION SUCCESSFUL!</h2>
+
+                <p>
+                    You're officially registered for Webathon 4.0.
+                </p>
+
+                <p class="success-small">
+                    Get ready to code, create and compete!
+                </p>
+
+                <button
+                    type="button"
+                    class="back-button"
+                    onclick="window.location.href='index.html'">
+                    BACK TO HOME
+                </button>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="resgis.script.js"></script>
+
+</body>
+</html>
